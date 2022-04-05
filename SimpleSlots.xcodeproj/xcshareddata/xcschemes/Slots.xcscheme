@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DEE5C1AF27EF2A830041CB84"
-               BuildableName = "Slots.app"
-               BlueprintName = "Slots"
-               ReferencedContainer = "container:Slots.xcodeproj">
+               BuildableName = "SimpleSimpleSlots.app"
+               BlueprintName = "SimpleSlots"
+               ReferencedContainer = "container:SimpleSlots.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEE5C1AF27EF2A830041CB84"
-            BuildableName = "Slots.app"
-            BlueprintName = "Slots"
-            ReferencedContainer = "container:Slots.xcodeproj">
+            BuildableName = "SimpleSimpleSlots.app"
+            BlueprintName = "SimpleSlots"
+            ReferencedContainer = "container:SimpleSlots.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DEE5C1AF27EF2A830041CB84"
-            BuildableName = "Slots.app"
-            BlueprintName = "Slots"
-            ReferencedContainer = "container:Slots.xcodeproj">
+            BuildableName = "SimpleSimpleSlots.app"
+            BlueprintName = "SimpleSlots"
+            ReferencedContainer = "container:SimpleSlots.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

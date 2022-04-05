@@ -10,6 +10,8 @@
 		DE20C97627F09D5B0057F97B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20C97527F09D5B0057F97B /* MenuView.swift */; };
 		DE20C97827F0A1150057F97B /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20C97727F0A1150057F97B /* RectangleView.swift */; };
 		DE20C97A27F0B19E0057F97B /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE20C97927F0B19E0057F97B /* ShopView.swift */; };
+		DE76032027FCAC0200436974 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE76031F27FCAC0200436974 /* UserData.swift */; };
+		DED20C3927F2732D006438AB /* ShopItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED20C3827F2732D006438AB /* ShopItemView.swift */; };
 		DEE5C1B427EF2A830041CB84 /* SlotsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5C1B327EF2A830041CB84 /* SlotsApp.swift */; };
 		DEE5C1B627EF2A830041CB84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE5C1B527EF2A830041CB84 /* ContentView.swift */; };
 		DEE5C1B827EF2A840041CB84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE5C1B727EF2A840041CB84 /* Assets.xcassets */; };
@@ -21,7 +23,9 @@
 		DE20C97527F09D5B0057F97B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		DE20C97727F0A1150057F97B /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
 		DE20C97927F0B19E0057F97B /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
-		DEE5C1B027EF2A830041CB84 /* Slots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slots.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE76031F27FCAC0200436974 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		DED20C3827F2732D006438AB /* ShopItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemView.swift; sourceTree = "<group>"; };
+		DEE5C1B027EF2A830041CB84 /* SimpleSimpleSlots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleSimpleSlots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE5C1B327EF2A830041CB84 /* SlotsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsApp.swift; sourceTree = "<group>"; };
 		DEE5C1B527EF2A830041CB84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DEE5C1B727EF2A840041CB84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,7 +55,7 @@
 		DEE5C1B127EF2A830041CB84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEE5C1B027EF2A830041CB84 /* Slots.app */,
+				DEE5C1B027EF2A830041CB84 /* SimpleSimpleSlots.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,8 +69,10 @@
 				DE20C97927F0B19E0057F97B /* ShopView.swift */,
 				DE20C97727F0A1150057F97B /* RectangleView.swift */,
 				DEE5C1C127EF63FA0041CB84 /* CardView.swift */,
+				DED20C3827F2732D006438AB /* ShopItemView.swift */,
 				DEE5C1B727EF2A840041CB84 /* Assets.xcassets */,
 				DEE5C1B927EF2A840041CB84 /* Preview Content */,
+				DE76031F27FCAC0200436974 /* UserData.swift */,
 			);
 			path = Slots;
 			sourceTree = "<group>";
@@ -82,9 +88,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DEE5C1AF27EF2A830041CB84 /* Slots */ = {
+		DEE5C1AF27EF2A830041CB84 /* SimpleSlots */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEE5C1BE27EF2A840041CB84 /* Build configuration list for PBXNativeTarget "Slots" */;
+			buildConfigurationList = DEE5C1BE27EF2A840041CB84 /* Build configuration list for PBXNativeTarget "SimpleSlots" */;
 			buildPhases = (
 				DEE5C1AC27EF2A830041CB84 /* Sources */,
 				DEE5C1AD27EF2A830041CB84 /* Frameworks */,
@@ -94,9 +100,9 @@
 			);
 			dependencies = (
 			);
-			name = Slots;
+			name = SimpleSlots;
 			productName = Slots;
-			productReference = DEE5C1B027EF2A830041CB84 /* Slots.app */;
+			productReference = DEE5C1B027EF2A830041CB84 /* SimpleSimpleSlots.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +120,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DEE5C1AB27EF2A830041CB84 /* Build configuration list for PBXProject "Slots" */;
+			buildConfigurationList = DEE5C1AB27EF2A830041CB84 /* Build configuration list for PBXProject "SimpleSlots" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +133,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DEE5C1AF27EF2A830041CB84 /* Slots */,
+				DEE5C1AF27EF2A830041CB84 /* SimpleSlots */,
 			);
 		};
 /* End PBXProject section */
@@ -151,7 +157,9 @@
 			files = (
 				DE20C97A27F0B19E0057F97B /* ShopView.swift in Sources */,
 				DEE5C1B627EF2A830041CB84 /* ContentView.swift in Sources */,
+				DE76032027FCAC0200436974 /* UserData.swift in Sources */,
 				DE20C97627F09D5B0057F97B /* MenuView.swift in Sources */,
+				DED20C3927F2732D006438AB /* ShopItemView.swift in Sources */,
 				DEE5C1C227EF63FA0041CB84 /* CardView.swift in Sources */,
 				DEE5C1B427EF2A830041CB84 /* SlotsApp.swift in Sources */,
 				DE20C97827F0A1150057F97B /* RectangleView.swift in Sources */,
@@ -278,65 +286,71 @@
 		DEE5C1BF27EF2A840041CB84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Slots/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = Slots;
 				DEVELOPMENT_TEAM = J5AUU2RVY7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Slots/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Slots";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.owenkern.Slots;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.owenkern.SimpleSlots;
+				PRODUCT_NAME = SimpleSimpleSlots;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DEE5C1C027EF2A840041CB84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Slots/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = Slots;
 				DEVELOPMENT_TEAM = J5AUU2RVY7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Slots/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Simple Slots";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.owenkern.Slots;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.owenkern.SimpleSlots;
+				PRODUCT_NAME = SimpleSimpleSlots;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DEE5C1AB27EF2A830041CB84 /* Build configuration list for PBXProject "Slots" */ = {
+		DEE5C1AB27EF2A830041CB84 /* Build configuration list for PBXProject "SimpleSlots" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEE5C1BC27EF2A840041CB84 /* Debug */,
@@ -345,7 +359,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEE5C1BE27EF2A840041CB84 /* Build configuration list for PBXNativeTarget "Slots" */ = {
+		DEE5C1BE27EF2A840041CB84 /* Build configuration list for PBXNativeTarget "SimpleSlots" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEE5C1BF27EF2A840041CB84 /* Debug */,

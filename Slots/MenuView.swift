@@ -33,7 +33,7 @@ struct MenuView: View {
                     RectangleView(x: $movement5)
                 }
                 VStack {
-                    Text("Slots")
+                    Text("Simple Slots")
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
@@ -48,24 +48,34 @@ struct MenuView: View {
                                 .foregroundColor(Color.white)
                                 .padding(.horizontal, 35.0)
                                 .padding(.vertical, 15.0)
-                                .background(Color.pink)
+                                .background(Color.purple)
                                 .cornerRadius(/*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                             
                         }
-                        NavigationLink {
-                            ShopView()
-                        } label: {
-                            Text("Shop")
-                                .font(.headline)
-                                .foregroundColor(Color.white)
-                                .padding(.horizontal, 35.0)
-                                .padding(.vertical, 15.0)
-                                .background(Color.pink)
-                                .cornerRadius(/*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                            
-                        }
+//                        NavigationLink {
+//                            ShopView()
+//                        } label: {
+//                            HStack {
+//                                Text("Shop")
+//                                Image(systemName: "lock")
+//                            }
+//                            .font(.headline)
+//                            .foregroundColor(Color.white)
+//                            .padding(.horizontal, 35.0)
+//                            .padding(.vertical, 15.0)
+//                            .background(Color.pink)
+//                            .cornerRadius(/*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+//                        }
                     }
                     Spacer()
+                    HStack {
+                        Spacer()
+                        Text("Created by Owen Kern")
+                            .font(.footnote)
+                            .foregroundColor(Color.white)
+                            .multilineTextAlignment(.trailing)
+                            .padding(.trailing)
+                    }
                 }
             }
         }

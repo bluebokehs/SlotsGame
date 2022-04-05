@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var symbols = ["apple", "cherry", "star"]
+    @State private var symbols = ["seven", "diamond", "bell"]
     @State private var credits = 500
     @State private var numbers = Array(repeating: 0, count: 9)
     @State private var backgrounds = Array(repeating: Color.white, count: 9)
@@ -17,19 +17,28 @@ struct ContentView: View {
     private var betAmount = 5
     @Environment(\.presentationMode) var presentation
     
+    @State var movement0 = -500
+    @State var movement1 = -300
+    @State var movement2 = -100
+    @State var movement3 = 100
+    @State var movement4 = 300
+    @State var movement5 = 500
+    
     var body: some View {
         ZStack {
             //Background
             Rectangle()
                 .foregroundColor(Color(red: 200/255, green: 143/255, blue: 32/255))
                 .edgesIgnoringSafeArea(.all)
-            Rectangle()
-                .foregroundColor(Color(red: 228/255, green: 195/255, blue: 76/255))
-                .rotationEffect(Angle(degrees: 45))
-                .edgesIgnoringSafeArea(.all)
-            
+            Group {
+                RectangleView(x: $movement0)
+                RectangleView(x: $movement1)
+                RectangleView(x: $movement2)
+                RectangleView(x: $movement3)
+                RectangleView(x: $movement4)
+                RectangleView(x: $movement5)
+            }
             VStack {
-                Spacer()
                 Text("Slots")
                     .font(.largeTitle)
                     .fontWeight(.bold)
@@ -45,7 +54,7 @@ struct ContentView: View {
                             }
                         }
                     })
-                Spacer()
+                    .opacity(/*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
                 Text("Credits: " + String(credits))
                     .font(.headline)
                     .foregroundColor(Color.black)
@@ -113,7 +122,7 @@ struct ContentView: View {
                                 .foregroundColor(Color.white)
                                 .padding(.horizontal, 35.0)
                                 .padding(.vertical, 15.0)
-                                .background(Color.pink)
+                                .background(Color.purple)
                                 .cornerRadius(/*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                                 
                         })
@@ -122,7 +131,9 @@ struct ContentView: View {
                     Spacer()
                 }
                 Spacer()
+                Spacer()
             }
+            .navigationBarHidden(true)
         }
         .animation(.easeOut)
     }
@@ -192,14 +203,14 @@ struct ContentView: View {
         // Check matches and distribute
         if matches > 0 {
             // At least 1 win
-            self.credits += matches * self.betAmount * 3
+            credits += matches * self.betAmount * 3
             self.win = true
         } else if !isPlus {
             // 0 wins, regular spin
-            self.credits -= self.betAmount
+            credits -= self.betAmount
         } else {
             // 0 wins, plus spin
-            self.credits -= self.betAmount * 5
+            credits -= self.betAmount * 5
         }
     }
     
